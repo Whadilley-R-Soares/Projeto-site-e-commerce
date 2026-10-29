@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site e-commerce</title>
+    <link rel="icon" href="imagen/icone/icone.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="imagen/icone/icone.png" alt="icone-site">
+                <h1><a href="#">WH-SHOP</a></h1>
+            </div>
+            <form class="barra-pesquisa">
+                <input type="text" placeholder="Pesquisar Produtos">
+            </form>
+            <div class="carrinho">
+                <button class="carrinho">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="carousel">
+            <div class="slides">
+                <img src="imagen/carousel/banner-carousel.png" alt="imagem carousel">
+                <img src="imagen/carousel/banner-carousel-2.png" alt="imagem carousel 2">
+            </div>
+
+            <button class="esquerda">&#10094;</button>
+            <button class="direita">&#10095;</button>
+        </div>
+
+        <div class="titulo-cards">
+            <h1>PC GAMERS</h1>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <div class="img">
+                    <img src="imagen/produtos/hunter-removebg-preview.png" alt="PC 1">
+                </div>
+
+                <h2>PC Gamer Kit Ryzen 5600G, RTX 4060 TI 16GB de Memória Ram</h2>
+                <p>R$ 2400 a Vista no Pix</p>
+                <p>E R$ 240 em 10x sem Juros no cartão</p>
+
+                <div class="btn-card">
+                    <button class="btn">Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img">
+                    <img src="imagen/produtos/PC-removebg-preview.png" alt="PC 1">
+                </div>
+
+                <h2>PC Gamer Kit Ryzen 5600G RX 7700 16GB de Memória Ram</h2>
+                <p>R$ 3000 a Vista no Pix</p>
+                <p>E R$ 300 em 10x sem Juros no cartão</p>
+
+                <div class="btn-card">
+                    <button>Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img">
+                    <img src="imagen/produtos/PC-Gamer-Aquario-Branco-Ryzen-5-5500-RTX-3050-6GB-32GB-RAM-SSD-NVMe-1TB-Windows-11-Pro_1770721447-removebg-preview.png" alt="PC 3">
+                </div>
+
+                <h2>PC-Gamer Aquario Branco Ryzen 5 5500 RTX 3050 6GB 32GB RAM</h2>
+                <p>R$ 2200 a Vista no Pix</p>
+                <p>E R$ 220 em 10x sem Juros no cartão</p>
+
+                <div class="btn-card">
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="titulo-cards">
+            <h1>PERIFÉRICOS</h1>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <div class="img">
+                    <img src="imagen/produtos/teclado-mecanico.png" alt="Periféricos 1">
+                </div>
+
+                <h2>Teclado Gamer 60% switch azul e vermelho</h2>
+                <p>R$ 150 a Vista no Pix</p>
+                <p>R$ 165 em 1x no cartão</p>
+
+                <div class="btn-card">
+                    <button class="btn">Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img">
+                    <img src="imagen/produtos/mouse-gamer.png" alt="Periféricos 2">
+                </div>
+
+                <h2>Mouse gamer da aorus DPI 1200 Scroll basico</h2>
+                <p>R$ 115 a Vista no Pix</p>
+                <p>R$ 130 em 1x no cartão</p>
+
+                <div class="btn-card">
+                    <button>Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img">
+                    <img src="imagen/produtos/headset.png" alt="Periféricos 3">
+                </div>
+
+                <h2>Headset Gamer da zomm com led e Microfone</h2>
+                <p>R$ 89 a Vista no Pix</p>
+                <p>R$ 96 em 1x no cartão</p>
+
+                <div class="btn-card">
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="infos">
+        <footer>
+            <ul>
+                <li>Email: wh.shop@gmail.com</li>
+                <li>Contato: 61 992635-8910</li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="https://github.com/Whadilley-R-Soares" target="_blank">Github</a></li>
+                <img src="imagen/icone/icone.png" alt="mago">
+            </ul>
+
+            
+            <button id="voltar-topo">Voltar para cima</button>
+
+        </footer>
+    </div>
+    <script type="module" src="js/carrossel.js"></script>
+</body>
+</html>

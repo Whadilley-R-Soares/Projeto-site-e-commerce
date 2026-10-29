@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.973);
+}
+
+/*=================== CABEÇÃLHO =======================*/
+
+header {
+
+    background-color: black;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 30px #ff008083;
+}
+
+.nav-bar {
+
+    background-color: #FF007F;
+    display: flex;
+    flex-direction: row;
+    margin: 3px 150px 3px 150px;
+    box-shadow: 0px 0px 30px #ff0080;
+    border-radius: 7px;
+}
+
+.logo{
+
+    font-family: "Audiowide", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.logo h1 a {
+
+    text-decoration: none;
+    color: black;
+}
+
+.carrinho {
+
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px 0px 0px;
+}
+
+.nav-bar button {
+
+    background-color: #FF007F;
+    border: none;
+    padding: 5px 5px;
+    margin-right: 0px;
+    cursor: pointer;
+    transition: 0.1s;
+    span {
+        font-size: 45px;
+    }
+}
+
+.nav-bar button:hover {
+
+    transform: scale(1.02);
+}
+
+.barra-pesquisa {
+
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-pesquisa input {
+
+    border: none;
+    padding: 15px 500px 15px 10px;
+    width: 100%;
+    font-size: 17px;
+    outline: none;
+    border-radius: 10px;
+}
+
+.barra-pesquisa input:focus {
+
+    border: 3px solid rgba(0, 0, 0, 0.918);
+    transition: 0.3s;
+}
+
+/*=================== CORPO DO SITE =======================*/
+
+main {
+    margin: 0px 50px;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+
+    max-width: 100%;
+    display: block;
+}
+
+.carousel button {
+
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    background-color: #ff00805d;
+    border: none;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #ff00805d;
+    cursor: pointer;
+}
+
+.carousel button:hover {
+
+    transition: 0.3s;
+    background-color: #FF007F;
+}
+
+.esquerda {
+    left: 10px;
+}
+
+.direita {
+    right: 10px;
+}
+
+.titulo-cards {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin: 20px 400px;
+    padding: 10px 0px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #FF007F;
+    border-radius: 60px;
+    box-shadow: 0px 0px 35px #ff008057;
+}
+
+.card-grid {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 15px;
+}
+
+.card {
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+    color: white;
+    width: 95%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    object-fit: contain;
+}
+
+.card:hover {
+
+    transform: translate(5px);
+    box-shadow: 2px 2px 20px #ff008073;
+}
+
+.card h2 {
+
+    font-size: 22px;
+}
+
+.card h2, p {
+    
+    padding: 10px 0px 0px 6px;
+}
+
+p {
+    font-weight: bold;
+}
+
+.card img {
+    width: 230px;
+    height: 260px;
+}
+
+.img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF007F;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.btn-card {
+
+    display: flex;
+    justify-content: center;
+    margin: 20px 15px 15px 15px;
+}
+
+.btn-card button {
+
+    width: 95%;
+    padding: 13px 10px 13px 10px;
+    color: white;
+    background-color: #FF007F;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-card button:hover {
+
+    background-color: #ff008079;
+    color: black;
+    transition: 0.30s;
+    transform: scale(1.02);
+}
+
+/*=================== FOOTER =======================*/
+
+.infos {
+
+    background-color: black;
+    padding-bottom: 15px;
+}
+
+ul {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 15px 0px 0px 60px;
+    list-style: none;
+    position: relative;
+}
+
+ul li {
+
+    padding: 10px;
+    margin-right: auto;
+    margin-bottom: 15px;
+    background-color: #FF007F;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #ff008069;
+    font-weight: bold;
+}
+
+ul li a {
+
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover {
+
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+ul img {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+}
+
+footer button {
+
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    width: 20%;
+    background-color: #FF007F;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    box-shadow: 0px 0px 20px #ff00805e;
+    cursor: pointer;
+}
+
+footer button:hover {
+
+    transition: 0.2s;
+    background-color: #ff00805e;
+}
+
+/*=================== MIDIA QUERYS =======================*/
+
+@media (max-width: 1280px) {
+
+    .nav-bar {
+
+        margin: 10px;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .carrinho {
+        width: 10px;
+    }
+
+    .barra-pesquisa {
+        
+        width: 100%;
+        margin-top: 15px;
+        order: 3;
+    }
+
+    .barra-pesquisa input{
+        padding: 12px 15px;
+        box-sizing: border-box;
+    }
+
+    main {
+
+        margin: auto;
+    }
+
+    .titulo-cards {
+
+        margin: 10px auto;
+        padding: 5px 0px;
+        font-size: 20px;
+        text-align: center;
+        width: 80%;
+        box-sizing: border-box;
+    }
+
+    ul {
+
+        padding: 5px 0px 0px 15px;
+        font-size: 12px;
+    }
+
+    ul li {
+
+        padding: 6px;
+    }
+
+    ul img {
+
+        width: 100px;
+    }
+
+    footer button {
+
+        font-size: 15px;
+        width: 50%;
+    }
+}
